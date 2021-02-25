@@ -29,7 +29,7 @@ export const DocumentDetails = () => {
                     setPokemonSpeciesSelected(result);
                 })
         }
-    });
+    },[pokemonUrl, oldUrl, pokemonSelected, oldSpeciesUrl]);
 
     return(
         <DetailCard pokemon={pokemonSelected} pokemonSpecies={pokemonSpeciesSelected}/>

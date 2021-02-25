@@ -18,7 +18,7 @@ export const DocumentFavoriteDetail = () => {
                     setPokemonSpeciesSelected(result);
                 })
         }
-    });
+    },[pokemonFav, oldUrl]);
 
     return(
         <DetailCard pokemon={pokemonFav} pokemonSpecies={pokemonSpeciesSelected}/>

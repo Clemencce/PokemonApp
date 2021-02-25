@@ -5,7 +5,7 @@ export const PokemonTypeComponent = ({types}) => {
 
     return(
         types.map(type => (
-            <img src={pokemon_type[type.type.name]} alt={"image type pokemon"}/>
+            <img src={pokemon_type[type.type.name]} alt={"type pokemon"}/>
         ))
     )
 };
