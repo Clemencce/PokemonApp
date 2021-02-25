@@ -13,7 +13,7 @@ export const PaginationNumber = ({pokemonsPerPage, totalPokemons,paginate}) => {
             <ul className={"pagination"}>
                 {pageNumbers.map(number => (
                     <li key={number} className={"page-item"}>
-                        <a href={"#"} onClick={() => paginate(number)} className={"page-link"}>
+                        <a  onClick={() => paginate(number)} className={"page-link"}>
                             {number}
                         </a>
                     </li>
