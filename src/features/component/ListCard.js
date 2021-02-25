@@ -2,7 +2,7 @@ import {pokemonUrlDetail} from "../document/documentSlice";
 import {useDispatch} from "react-redux";
 import React from "react";
 import {FcBinoculars} from "react-icons/fc";
-import {IconButton,Card,CardMedia,Box,CardContent,Typography} from "@material-ui/core";
+import {IconButton,Card,CardMedia,Box,CardContent} from "@material-ui/core";
 import {makeStyles} from "@material-ui/styles";
 import {PokemonNameComponent} from "./PokemonNameComponent";
 

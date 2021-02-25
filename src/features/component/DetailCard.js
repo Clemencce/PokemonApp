@@ -2,7 +2,7 @@ import React from "react";
 import {booleanIsFavoriteButtonDisplay} from "../document/documentSlice";
 import {useSelector} from "react-redux";
 import {makeStyles} from "@material-ui/styles";
-import {Card,CardMedia,CardContent,CardHeader,CardActions,Box, CircularProgress,Container} from '@material-ui/core';
+import {Card,CardMedia,CardContent,CardHeader,CardActions,Box,Container} from '@material-ui/core';
 import honour_ball from "../../assets/honour_ball.png"
 import master_ball from "../../assets/master_ball.png"
 import {PokemonNameComponent} from "./PokemonNameComponent";

@@ -55,7 +55,7 @@ export const DocumentListPokemon = () => {
                 isFavoriteButtonDisplay:true
             },)
         )
-    },[]);
+    },[dispatch]);
 
     const doFetch = (su) => {
         fetch(su)

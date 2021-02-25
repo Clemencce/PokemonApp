@@ -13,7 +13,7 @@ export const DocumentDetails = () => {
     const [oldSpeciesUrl, setOldSpeciesUrl] = useState('');
 
     useEffect(() => {
-        if (oldUrl !== pokemonUrl){
+        if (pokemonUrl !== null && oldUrl !== pokemonUrl){
             setOldUrl(pokemonUrl);
             fetch(pokemonUrl)
                 .then(res => res.json())

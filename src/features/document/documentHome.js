@@ -32,7 +32,7 @@ export const DocumentHome = () => {
 
     const [index] = useState(Math.floor(Math.random() * (898)) + 1);
     const pokemonRandomSelected = useSelector(selectRandomPokemon);
-    const status = useSelector(selectHomeStatus);
+    // const status = useSelector(selectHomeStatus);
     const dispatch = useDispatch();
     const classes = useStyles();
 
@@ -40,7 +40,7 @@ export const DocumentHome = () => {
         dispatch(
             randomPokemon(index)
         )
-    },[]);
+    },[dispatch]);
 
     return(
         <Container className={classes.root} >

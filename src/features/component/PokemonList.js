@@ -11,6 +11,7 @@ export const PokemonList = ({pokemonList,loading,typeList}) => {
 
     return(
         <Box display={"flex"} flexWrap={"wrap"}>
+            {/* eslint-disable-next-line array-callback-return */}
             {pokemonList.map((pokemon) => {
                 if (typeList === 'type'){
                     return <ListCard pokemon={pokemon.pokemon}/>
