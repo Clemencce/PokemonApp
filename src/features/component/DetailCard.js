@@ -53,11 +53,11 @@ export const DetailCard = ({pokemon, pokemonSpecies}) => {
                         <PokemonEvolveFromComponent evolve={pokemonSpecies.evolves_from_species}/>
                         <PokemonFlavorTextComponent flavor={pokemonSpecies.flavor_text_entries}/>
                         {pokemonSpecies.is_legendary === true
-                            ? <img src={honour_ball} className={classes.pokeball}/>
+                            ? <img src={honour_ball} className={classes.pokeball} alt={"honour_ball"}/>
                             : ''
                         }
                         {pokemonSpecies.is_mythical === true
-                            ? <img src={master_ball} className={classes.pokeball}/>
+                            ? <img src={master_ball} className={classes.pokeball} alt={"master_ball"}/>
                             : ''
                         }
                     </Box>

@@ -7,12 +7,12 @@ export const PaginationPreviousNext = ({nextUrl,previousUrl,handle}) => {
             <nav aria-label={"previous next"}>
                 <ul className={"pagination"}>
                     {previousUrl == null
-                        ? <li className={"page-item disabled"}><a className={"page-link"}  aria-disabled={"true"}>Previous</a></li>
-                        :<li className={"page-item"}><a className={"page-link"}  onClick={() => handle(previousUrl)}>Previous</a></li>
+                        ? <li className={"page-item disabled"}><button className={"page-link"}  aria-disabled={"true"}>Previous</button></li>
+                        :<li className={"page-item"}><button className={"page-link"}  onClick={() => handle(previousUrl)}>Previous</button></li>
                     }
                     {nextUrl == null
-                        ? <li className={"page-item disabled"}><a className={"page-link"} >Next</a></li>
-                        : <li className={"page-item"}><a className={"page-link"}  onClick={() => handle(nextUrl)}>Next</a></li>
+                        ? <li className={"page-item disabled"}><button className={"page-link"} >Next</button></li>
+                        : <li className={"page-item"}><button className={"page-link"}  onClick={() => handle(nextUrl)}>Next</button></li>
                     }
                 </ul>
             </nav>

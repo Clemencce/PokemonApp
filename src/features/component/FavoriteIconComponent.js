@@ -32,10 +32,11 @@ export const FavoriteIconComponent = ({pokemon}) => {
         var sourceIcon = <FavoriteBorderIcon/>;
         pokemonsFavorisSelected.map(pokemonFav => {
             if (pokemonFav.name === pokemon.name){
-                sourceIcon = <FavoriteIcon/>
+                 sourceIcon = <FavoriteIcon/>
             }
+            return sourceIcon;
         });
-        return sourceIcon
+        return sourceIcon;
     };
 
     return(

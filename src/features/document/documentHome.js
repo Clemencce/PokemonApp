@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {randomPokemon, selectHomeStatus, selectRandomPokemon} from "./documentSlice";
+import {randomPokemon, selectRandomPokemon} from "./documentSlice";
 import {Box,CardHeader,CardMedia,CardContent,Card,Container,CircularProgress} from "@material-ui/core";
 import {makeStyles} from "@material-ui/styles";
 import Back from "../../assets/fond.jpg"
@@ -40,7 +40,7 @@ export const DocumentHome = () => {
         dispatch(
             randomPokemon(index)
         )
-    },[dispatch]);
+    },[dispatch,index]);
 
     return(
         <Container className={classes.root} >
