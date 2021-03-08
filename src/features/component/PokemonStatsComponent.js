@@ -20,7 +20,7 @@ export const PokemonStatsComponent = ({stats}) => {
 
     return(
         stats.map(stat => (
-                <Box style={{marginTop:10}}>
+                <Box key={stat.stat.name} style={{marginTop:10}}>
                     <Typography variant={"h6"} component={"h6"}>{stat.stat.name} - {stat.base_stat}</Typography>
                     <CustomLinearProgress variant={"determinate"} value={stat.base_stat}/>
                 </Box>

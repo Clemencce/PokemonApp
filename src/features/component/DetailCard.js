@@ -36,7 +36,7 @@ export const DetailCard = ({pokemon, pokemonSpecies}) => {
     return(
         <Container>
             {pokemon.length !== 0 && pokemonSpecies.length !== 0
-            ?<Card className={classes.root}>
+            ?<Card className={classes.root}  role={"card-detail"}>
                 <CardHeader
                 title={"N°" + pokemon.id}/>
                 <Box display={"flex"} justifyContent={"center"}>
@@ -46,7 +46,7 @@ export const DetailCard = ({pokemon, pokemonSpecies}) => {
                     title={"Image pokemon"}/>
                 </Box>
                 <CardContent>
-                    <PokemonNameComponent name={pokemon.name}/>
+                    <PokemonNameComponent name={pokemon.name} type={'detail'}/>
                     <PokemonHeightTypeWeightComponent height={pokemon.height} types={pokemon.types} weight={pokemon.weight}/>
                     <PokemonStatsComponent stats={pokemon.stats}/>
                     <Box display={"flex"} alignItems={"center"} flexDirection={"column"}>
