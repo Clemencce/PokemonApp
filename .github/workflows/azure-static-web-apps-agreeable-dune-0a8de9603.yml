@@ -3,12 +3,10 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - master
       - develop
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
-      - master
       - develop
 
 jobs:
@@ -45,7 +43,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AGREEABLE_DUNE_0A8DE9603 }}
           action: "close"
-          
+
   lint-and-test:
     name: Lint and test
     runs-on: ubuntu-latest
@@ -60,4 +58,4 @@ jobs:
         run: |
           npm install
           npm run lint
-          npm run test -- --coverage         
+          npm run test -- --coverage
