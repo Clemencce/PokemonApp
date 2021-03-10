@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import pokemonSpecies from "./pokemon_species"
 import {PokemonEvolveFromComponent} from "../PokemonEvolveFromComponent";
 
-describe('documentDetails', () => {
+describe('PokemonEvolveFromComponent', () => {
     it('Affiche texte de l\'évolution si evolve != null', () => {
         render(
             <PokemonEvolveFromComponent evolve={pokemonSpecies.evolves_from_species}/>

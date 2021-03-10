@@ -45,7 +45,7 @@ export const DocumentHome = () => {
     return(
         <Container className={classes.root} >
             {pokemonRandomSelected.length !== 0
-                ?<Card role={"random_pokemon_card"}>
+                ?<Card>
                     <CardHeader
                         title={"N°" + pokemonRandomSelected.id}/>
                     <Box display={"flex"} justifyContent={"center"}>

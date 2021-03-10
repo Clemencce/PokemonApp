@@ -15,8 +15,7 @@ describe('documentHome', () => {
             </Provider>
         );
 
-        expect(screen.queryByRole('random_pokemon_card')).toBeNull();
-
-        expect(await screen.findByRole('random_pokemon_card')).toBeInTheDocument();
+        const kg = await screen.findByText(/kg/);
+        expect(kg).toBeInTheDocument();
     });
 });

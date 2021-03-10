@@ -11,10 +11,10 @@ export const PokemonNameComponent = ({name,type}) => {
     return(
         <Box display={"flex"} justifyContent={"center"} >
             {type === 'detail'
-                ?<Typography role={"typo-detail"} variant={"h4"} component={"h4"}>
+                ?<Typography variant={"h4"} component={"h4"}>
                     {strUcString(name)}
                 </Typography>
-                :<Typography role={"typo-autre-type"} variant={"h6"} component={"h6"}>
+                :<Typography variant={"h6"} component={"h6"}>
                     {strUcString(name)}
                 </Typography>
             }

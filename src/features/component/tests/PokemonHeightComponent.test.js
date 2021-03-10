@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import pokemon from "./pokemon";
 import {PokemonHeightComponent} from "../PokemonHeightComponent";
 
-describe('documentDetails', () => {
+describe('PokemonHeightComponent', () => {
     it('Affiche texte de la taille du pokemon', () => {
         render(
             <PokemonHeightComponent height={pokemon.height}/>

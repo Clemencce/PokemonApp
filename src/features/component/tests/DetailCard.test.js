@@ -6,7 +6,7 @@ import store from "../../../app/store";
 import pokemon from "./pokemon"
 import pokemonSpecies from "./pokemon_species";
 
-describe('documentDetails', () => {
+describe('DetailCard', () => {
     it('affiche le text quand la longueurs des props égale 0', () => {
         render(
             <Provider store={store}>
@@ -24,6 +24,6 @@ describe('documentDetails', () => {
             </Provider>
         );
 
-        expect(screen.getByRole('card-detail')).toBeInTheDocument();
+        expect(screen.getByText(/Ditto/)).toBeInTheDocument();
     })
 });
